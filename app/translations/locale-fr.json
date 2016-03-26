@@ -1,0 +1,82 @@
+{
+  "description": "Act Fund, la première plate-forme permettant de financer d'uniques projets, simplement en donnant de votre temps! Pas besoin de vous ruiner, consacrez juste une minute de votre temps ! Et cela grace a nos sponsors qui diffusent: de la pub, des videos, des applications mobile, des questionaires. Une revolution, plus besoin de crowdfunding, act funding fait le job. Vous pouvez aussi aider des ONG grace a GIVAGO, un site communautaire, sur le meme principe que ACT FUND",
+  "first_name": "Prénom",
+  "last_name": "Nom",
+  "email": "Email",
+  "title": {
+    "actfund": "Act Fund, la première plate-forme permettant de financer d'uniques projets, simplement en donnant de votre temps! Pas besoin de vous ruiner, consacrez juste une minute de votre temps !",
+    "home": "Accueil",
+    "preview": "Aperçu",
+    "404": "Page introuvable"
+  },
+  "404": "La page que vous demandez est introuvable.",
+  "close": "Fermer",
+  "menu": {
+    "what": "En savoir plus",
+    "help_us": "Aidez-nous",
+    "preview": "Aperçu",
+    "newsletter": "Newsletter",
+    "charities": "ONGs",
+    "contact": "Contact"
+  },
+  "top": {
+    "title": {
+      "1": "Financez les projets que vous",
+      "2": "en donnant de votre"
+    }
+  },
+  "about": {
+    "title": "La première plate-forme de financement de projets,simplement en donnant votre temps!",
+    "text": {
+      "1": "Pas besoin de vous ruiner !",
+      "2": "Juste consacrer 1 minute de votre temps !"
+    }
+  },
+  "steps": {
+    "title": "Trois étapes faciles:",
+    "more": "En savoir plus",
+    "select": {
+      "title": "Sélectionnez",
+      "text": "Les membres postent leurs projets: Choisissez simplement ceux que vous aimez !",
+      "modal": {
+	"title": "Sélectionner les projets que vous aimez!",
+	"text": "Act fund présente une variété de projets que vous pouvez aider. Contrairement au Crowd-Funding, avec l'Act-Funding, vous n'avez plus besoin de casser votre tirelire ! Répondez simplement à la demande d'un sponsor."
+      }
+    },
+    "act": {
+      "title": "Agissez",
+      "text": "Regardez une vidéo, répondez à un sondage, ou télécharger l'application de l'un de nos sponsors : Rien de plus facile & rapide !",
+      "modal": {
+	"title": "Consacrez juste une minute de votre temps",
+	"text": {
+	  "1": "Vous n'avez plus qu'à dédier une minute de votre temps à l'un de nos sponsor,",
+	  "2": "pour cela vous pouvez téléchargez une application sur votre smartphone,répondre à un sondage, ou même regarder une courte vidéo !",
+	  "3": "Chaque action que vous consacrerez a un sponsor permettra de financer les projets qui vous tiennent à cœur."
+	}
+      }
+    },
+    "done": {
+      "title": "Et après ?",
+      "text": "Le projet que vous avez sélectionné recevra 80% de ce que le sponsor paye. Les 20% restant permettent à Act Fund d'exister !",
+      "modal": {
+	"title": "All done!",
+	"text": {
+	  "1": "Pourquoi seulement 80% et non 100% ?",
+	  "2": "La réponse est simple, l’hébergement d'une plateforme comme celle-ci engage des frais de développement, de commercialisation. De même que les goodies pour notre communauté et la recherche de nouveaux partenariats avec des sponsors. Notre objectif est l'équillibre financier."	  
+	}
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Intéressé(e) ?",
+    "follow_us": "Suivez nous"
+  },
+  "project": {
+    "title": "Aidez-nous avec notre projet !"
+  },
+  "fundraise": "Vous aussi financez vos projets !",
+  "fundraise_charities": "Vous voulez aider des ONG ?",
+  "preview": {
+    "title": "Petit apperçu du futur Act Fund !"    
+  }
+}

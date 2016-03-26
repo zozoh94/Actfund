@@ -1,0 +1,213 @@
+<header id="top" class="header" ng-style="resize(70)" resize>
+  <div class="text-center">
+    <h1>Act Fund</h1>
+    <h3>{{ 'top.title.1' | translate }} <span class="fa fa-heart"></span> {{ 'top.title.2' | translate }} <span class="fa fa-clock-o"></span></h3>
+    <br>
+    <a ng-click="scrollTo('what', 'app.home')" ui-sref="app.home({lang: activeLang, '#': 'what'})" class="btn btn-dark btn-lg">{{ 'menu.what' | translate }}</a>
+  </div>
+</header>
+
+<!-- About -->
+<section id="what" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>{{ 'about.title' | translate }}</h2>
+        <p class="lead">{{ 'about.text.1' | translate }}<br>{{ 'about.text.2' | translate }}</p>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+
+<!-- Services -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="steps" class="services bg-primary">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>{{ 'steps.title' | translate }}</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-lightbulb-o fa-stack-1x text-primary"></i>
+              </span>
+              <h4>
+                <strong>{{ 'steps.select.title' | translate }}</strong>
+	      </h4>
+	      <p>{{ 'steps.select.text' | translate }}</p>	      
+	      <button type="button" class="btn btn-light" ng-click="openModal1()">{{ 'steps.more' | translate }}</button>
+	      <!-- Modal -->
+	      <script type="text/ng-template" id="modal1.html">
+		<div class="modal-header text-center">
+		  <button type="button" class="close" ng-click="close()">&times;</button>
+		  <h4 class="modal-title">{{ 'steps.select.modal.title' | translate }}</h4>
+		</div>
+		<div class="modal-body text-center">
+		  <p>{{ 'steps.select.modal.text' | translate }}</p>
+		</div>
+		<div class="modal-footer">
+		  <button class="btn btn-default" type="button" ng-click="close()">{{ 'close' | translate }}</button>
+		</div>
+	      </script>
+
+	    </div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="service-item">
+	      <span class="fa-stack fa-4x">
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<i class="fa fa-video-camera fa-stack-1x text-primary"></i>
+	      </span>
+	      <h4>
+		<strong>{{ 'steps.act.title' | translate }}</strong>
+	      </h4>
+	      <p>{{ 'steps.act.text' | translate }}</p>
+	      <button type="button" class="btn btn-light" ng-click="openModal2()">{{ 'steps.more' | translate }}</button>
+	      <!-- Modal -->
+	      <script type="text/ng-template" id="modal2.html">
+		<div class="modal-header text-center">
+		  <button type="button" class="close" ng-click="close()">&times;</button>
+		  <h4 class="modal-title">{{ 'steps.act.modal.title' | translate }}</h4>
+		</div>
+		<div class="modal-body text-center">
+		  <p>
+		    {{ 'steps.act.modal.text.1' | translate }}
+		    <br>
+		    {{ 'steps.act.modal.text.2' | translate }}
+		    <br>
+		    {{ 'steps.act.modal.text.3' | translate }}
+		  </p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" ng-click="close()">{{ 'close' | translate }}</button>
+		</div>
+	      </script>
+	    </div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="service-item">
+	      <span class="fa-stack fa-4x">
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<i class="fa fa-usd fa-stack-1x text-primary"></i>
+	      </span>
+	      <h4>
+		<strong>{{ 'steps.done.title' | translate }}</strong>
+	      </h4>
+	      <p>{{ 'steps.done.text' | translate }}</p>
+	      <button type="button" class="btn btn-light" ng-click="openModal3()">{{ 'steps.more' | translate }}</button>
+	      <!-- Modal -->
+	      <script type="text/ng-template" id="modal3.html">
+	      	<div class="modal-header text-center">
+		  <button type="button" class="close" ng-click="close()">&times;</button>
+		  <h4 class="modal-title">{{ 'steps.done.modal.title' | translate }}</h4>
+		</div>
+		<div class="modal-body text-center">
+		  <p>
+		    {{ 'steps.done.modal.text.1' | translate }}
+		    <br>
+		    {{ 'steps.done.modal.text.2' | translate }}
+		  </p>
+		</div>
+		<div class="modal-footer">
+		  <button type="btn" class="btn btn-default" ng-click="close()">{{ 'close' | translate }}</button>
+		</div>
+	      </script>
+	    </div>
+	  </div>
+
+	</div>
+	<!-- /.row (nested) -->
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+
+<!-- Portfolio -->
+<section id="help_us" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h2>{{ 'project.title' | translate }}</h2>
+
+	<div class="spacer"></div>
+
+	<div class="row">
+	  <div class="col-lg-5">
+	    <center>
+	      <div class="cf_widget_container"><div class="cf_widget_inner"><a class="cf_widget_title" href="https://www.crowdfunder.co.uk/actfund/{{cfGaClick}}" title="View Act Fund" target="_top">Act Fund are crowdfunding now</a><div class="cf_widget_project_image"><a href="https://www.crowdfunder.co.uk/actfund/{{cfGaClick}}" title="View Act Fund" target="_top"><img src="https://www.crowdfunder.co.uk/uploads/projects/45613_211x130.jpg" alt="Act Fund" class="pf_project_image"/></a></div><div class="cf_widget_numbers"><div class="cf_widget_left cf_widget_border_right"><div class="cf_widget_number">£217</div><div class="cf_widget_raised">RAISED</div></div><div class="cf_widget_right"><div class="cf_widget_number">£4,000</div><div class="cf_widget_target">TARGET</div></div><div class="cf_widget_clearfix"></div><div class="cf_widget_border_bottom"></div><div class="cf_widget_left cf_widget_border_right"><div class="cf_widget_number">22</div><div class="cf_widget_days_left">DAYS LEFT</div></div><div class="cf_widget_right"><div class="cf_widget_number">9</div><div class="cf_widget_backers">BACKERS</div></div><div class="cf_widget_clearfix"></div></div><div class="cf_widget_pledge"><a href="https://www.crowdfunder.co.uk/actfund/{{cfGaPledge}}" class="cf_widget_button" target="_top">PLEDGE NOW > </a></div><div class="cf_widget_footer"><a href="https://www.crowdfunder.co.uk/{{cfGaClick}}" title="Visit Crowdfunder" target="_top"><img src="https://www.crowdfunder.co.uk/img/site/v3/logo.png"/></a></div></div></div><style>.cf_widget_container {background:#FFF;border:2px solid #CCC;border-radius:6px;max-width:400px;width:100%;min-width:200px}.cf_widget_inner {text-align:center;padding:10px}.cf_widget_title {color:#159594!important;font-size:18px!important;font-family:Lato,sans-serif!important;margin:0!important;text-decoration:none}.cf_widget_status {color:#666;font-size:18px!important;font-family:Lato,sans-serif!important;margin:5px 0!important}.cf_widget_project_image {position:relative!important;margin:10px 0!important}.cf_widget_project_image img {max-width:100%;width:auto;height:auto}.cf_widget_project_image_overlay {position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.25);z-index:5}.cf_widget_project_overlay {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#FFF!important;z-index:10}.cf_widget_project_overlay .cf_widget_project_percentage {font-size:50px!important;line-height:50px !important;font-family:Lato,sans-serif!important;text-shadow:0 -2px 2px rgba(35,35,35,1)}.cf_widget_project_overlay .cf_widget_project_status {font-size:20px!important;line-height:20px !important;text-transform:uppercase;font-family:Lato,sans-serif!important;text-shadow:0 -2px 2px rgba(35,35,35,1)}.cf_widget_left {float:left;width:50%}.cf_widget_right {float:right;width:50%}.cf_widget_clearfix {float:none;clear:both}.cf_widget_border_right {border-right:1px solid #DDD!important;margin-right:-1px!important}.cf_widget_border_left {border-left:1px solid #DDD!important;margin-left:-1px!important}.cf_widget_border_bottom {border-bottom:1px solid #DDD!important;width:100%!important;margin:10px 0!important}.cf_widget_sponsor_image {width:auto;max-width:75%}.cf_widget_numbers {margin-top:10px!important}.cf_widget_number {color:#159594!important;font-family:Lato,sans-serif!important;font-weight:700!important;font-size:18px!important}.cf_widget_backers,.cf_widget_days_left,.cf_widget_raised,.cf_widget_sponsor,.cf_widget_target {color:#666!important;font-family:Lato,sans-serif!important;font-weight:400!important;font-size:14px!important;text-transform:uppercase}.cf_widget_button {display:block!important;width:100%;background-color:#1393cb!important;color:#FFF!important;text-decoration:none!important;padding:10px 0!important;font-family:Lato,sans-serif!important;border-radius:4px;margin:10px 0!important}.cf_widget_button:hover {background-color:#14a9e7!important}.cf_widget_footer img {width:50%!important}</style>
+            </center>
+	  </div>
+
+	  <div class="col-lg-7">
+	    <center>
+	      <iframe ng-src="{{surveyUrl}}" width="100%" height="480px" frameborder="0" scrolling="no"></iframe>
+	      <uib-progressbar class="progress-striped active" max="3000" value="total"><i>{{ total }}$ / 3000$</i></uib-progressbar>
+	    </center>
+	  </div>
+	</div>
+        
+
+	<div class="spacer"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<aside id="interested" class="call-to-action bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>{{ 'newsletter.title' | translate }}</h3>
+
+        <form class="form-inline" role="form" action="//actfund.us12.list-manage.com/subscribe/post?u=6fc07dc8b2cbcc05e6c63d16c&amp;id=2204832c2c" method="post" target="_blank">
+
+	  <div class="form-group">
+	    <label class="sr-only" for="prenomNewsletter">{{ 'first_name' | translate }}</label>
+	    <input type="text" class="form-control" id="prenomNewsletter" placeholder="{{ 'first_name' | translate }}" name="FNAME" required>	    
+	  </div>
+
+	  <div class="form-group">
+	    <label class="sr-only" for="nomNewsletter">{{ 'last_name' | translate }}</label>
+	    <input type="text" class="form-control" id="omNewsletter" placeholder="{{ 'last_name' | translate }}" name="LNAME" required>	    
+	  </div>
+
+	  <div class="form-group">
+	    <label class="sr-only" for="emailNewsletter">{{ 'email' | translate }}</label>
+	    <input type="email" class="form-control" id="emailNewsletter" placeholder="{{ 'email' | translate }}" name="EMAIL" required>	    
+	  </div>
+
+	  <input type="hidden" name="b_6fc07dc8b2cbcc05e6c63d16c_2204832c2c" tabindex="-1" value="">
+
+          <button class="btn btn-light" >{{ 'newsletter.follow_us' | translate }}</button>
+
+	</form>
+
+      </div>
+    </div>
+  </div>
+</aside>
+
+<aside class="callout">
+  <div class="text-vertical-center">
+    <h1>{{ 'fundraise' | translate }}</h1>
+  </div>
+</aside>
+
+<aside id="charities" class="call-to-action bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>{{ 'fundraise_charities' | translate }}</h3>
+        <a href="http://givago.co" class="btn btn-light">GIVAGO</a>	
+      </div>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,82 @@
+{
+  "description": "ActFund landing page Finance projects you love by giving your time thanks to advertisment survey video media The first platform enabling you to fund unique projects by simply giving your time! No need to empty your wallet, just spare a minute! actfunding action answer bank break care charities close community contact costs crowdfunding dedicate developers doing download easy enable enabling fees finance finding fund fundraise fundraising givago giving goodies help hosting interested it’s just learn love marketing members minute money need paid partnership platform post presenting project projects quick receive select selected short simply smartphone spare sponsor sponsors steps subscribe survey surveys time unique unlike various video videos wallet want watch",
+  "first_name": "First name",
+  "last_name": "Last name",
+  "email": "Email",
+  "title": {
+    "actfund": "Act Fund, the first platform enabling you to fund unique projects by simply giving your time!",
+    "home": "Home",
+    "preview": "Preview",
+    "404": "Page not found"
+  },
+  "404": "The page you’re looking for can’t be found.",
+  "close": "Close",
+  "menu": {
+    "what": "What is it?",
+    "help_us": "Help Us",
+    "preview": "Preview",
+    "newsletter": "Subscribe",
+    "charities": "Charities",
+    "contact": "Contact"
+  },
+  "top": {
+    "title": {
+      "1": "Finance projects you",
+      "2": "by giving your"
+    }
+  },
+  "about": {
+    "title": "The first platform enabling you to fund unique projects by simply giving your time!",
+    "text": {
+      "1": "No need to empty your wallet,",
+      "2": "Just spare a minute!"
+    }
+  },
+  "steps": {
+    "title": "Three easy steps:",
+    "more": "Learn More",
+    "select": {
+      "title": "Select",
+      "text": "Members post their projects in need of fundraising. Simply select the one you love.",
+      "modal": {
+	"title": "Select projects you love",
+	"text": "Act Fund is presenting various projects that you can fundraise. Unlike crowd-funding, this is act-funding, no need to break the bank! Select a project and act for a sponsor!"
+      }
+    },
+    "act": {
+      "title": "Act",
+      "text": "Watch a video, answer a survey or download an app from one of our sponsors. It’s that quick and easy.",
+      "modal": {
+	"title": "Dedicate 1 minute of your time",
+	"text": {
+	  "1": "You now just have to dedicate one minute of your time for a sponsor.",
+	  "2": "You can download an app from your smartphone, answer surveys, or even watch short videos.",
+	  "3": "Every action you are doing for the sponsor will enable to finance the project you care about."
+	}
+      }
+    },
+    "done": {
+      "title": "Done",
+      "text": "The project you selected will receive 80% of what the sponsor paid.",
+      "modal": {
+	"title": "All done!",
+	"text": {
+	  "1": "Why only 80% and not 100%?",
+	  "2": "The answer is easy: hosting costs money, developers and other fees such as marketing goodies for our community, finding new partnership with sponsors..."
+	}
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Interested?",
+    "follow_us": "Follow Us"
+  },
+  "project": {
+    "title": "Help us with our project!"
+  },
+  "fundraise": "Fundraise your projects!",
+  "fundraise_charities": "Want to fundraise charities?",
+  "preview": {
+    "title": "Here is a sneacky preview of what it will look like!"    
+  }
+}

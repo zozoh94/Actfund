@@ -1,0 +1,6 @@
+# robotstxt.org
+
+User-agent: *
+Disallow:
+
+Sitemap: http://actfund.co/sitemap.xml

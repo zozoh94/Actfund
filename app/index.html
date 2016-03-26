@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" ng-app="actfundApp" lang="{{ activeLang }}" data-ng-controller="RootController as root">
+  <head>
+    <meta name="fragment" content="!" />
+    <base href="/" target="_blank">
+    <link ng-if="otherLang" rel="alternate" hreflang="{{otherLang}}" href="{{otherLangURL}}" />
+    <meta name="prerender-status-code" content="{{responseStatus}}">
+    <meta charset="utf-8">
+    <title data-ng-bind="root.htmlTitle">Act Fund, the first platform enabling you to fund unique projects by simply giving your time!</title>
+    <meta name="description" content="{{root.pageDesc}}">
+    <meta name="author" content="Givago Ltd.">
+    <meta name="keywords" content="actfund, givago, project, crowdfunding, time">
+    <meta name="viewport" content="width=device-width">
+    <link rel="canonical" href="{{ root.pageURL }}" />    
+
+    <!-- Facebook META -->
+    <meta property="og:site_name" content="Actfund">
+    <meta property="og:author" content="Givago Ltd.">
+    <meta property="og:title" content="{{root.htmlTitle}}">
+    <meta property="og:description" content="{{root.pageDesc}}">
+    <meta property="og:url" content="{{root.pageURL}}">
+    <!-- Dynamic OG images -->
+    <meta property="og:image" content="{{img.url}}" ng-repeat="img in root.pageImages">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter META -->
+    <meta name="twitter:title" content="{{root.htmlTitle}}">
+    <meta name="twitter:description" content="{{root.pageDesc}}">
+    <meta name="twitter:url" content="{{root.pageURL}}">
+    <!-- Dynamic Twitter images -->
+    <meta name="twitter:image" content="{{img.url}}" ng-repeat="img in root.pageImages">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ng-include="'partials/menu.html'" ng-controller="MenuCtrl"></div>
+
+    <!-- Add your site or application content here -->
+    <div ui-view></div>
+    
+    <!-- Footer -->
+    <footer>
+      <div id="contact" class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h4><strong>Act Fund</strong>
+            </h4>
+            <ul class="list-unstyled">
+              <li><span class="fa fa-map-marker"></span><a href="https://www.google.com/maps/place/86+Percy+St,+Oxford,+Oxfordshire+OX4+3AD,+UK/@51.7413749,-1.2361106,17z/data=!3m1!4b1!4m2!3m1!1s0x4876c1480b16462f:0x5625e3dcd90c9873"></a>86 Percy Street<br>OX43AD, Oxford, England</li>	      
+	      <li><i class="fa fa-phone fa-fw"></i> <a href="tel:+447554938537"></a> +44 (0) 7554 938537</li>
+	      <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:ivan@actfund.co">ivan@actfund.co</a>
+	      </li>
+	    </ul>
+	    <div class="fb-like" data-href="https://facebook.com/actfund" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    <div class="spacer"></div>                   
+	    <ul class="list-inline">
+	      <li>
+		<a href="https://www.facebook.com/actfund/?fref=ts"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+	      </li>
+	      <li>
+		<a href="https://twitter.com/actfundco"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+	      </li>
+	      <li>
+		<a href="https://instagram.com/actfundco"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+	      </li>
+	    </ul>
+	    <hr class="small">
+	    <p class="text-muted">Copyright &copy; Act Fund 2016</p>
+	  </div>
+	</div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/angular-uuid4/angular-uuid4.js"></script>
+    <script src="bower_components/angular-md5/angular-md5.js"></script>
+    <script src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+	<script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/menu.js"></script>
+        <script src="scripts/services/scrollanchor.js"></script>
+        <script src="scripts/directives/heightresive.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
