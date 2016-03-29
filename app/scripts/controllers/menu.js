@@ -8,7 +8,7 @@
  * Controller of the actfundApp Menu
  */
 angular.module('actfundApp')
-  .controller('MenuCtrl', function ($rootScope, $scope, $location, $window, $state) {            
+  .controller('MenuCtrl', function ($rootScope, $scope) {            
     $scope.isCollapsed = true;
 
     $scope.inverseCollapse = function() {
