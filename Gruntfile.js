@@ -468,8 +468,56 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    }
+    },
 
+    realFavicon: {
+      favicons: {
+	src: 'logo.png',
+	dest: '<%= yeoman.dist %>',
+	options: {
+	  iconsPath: '',
+	  html: [ '<%= yeoman.dist %>/index.html' ],
+	  design: {
+	    ios: {
+	      pictureAspect: 'backgroundAndMargin',
+	      backgroundColor: '#8fc73d',
+	      margin: '7%'
+	    },
+	    desktopBrowser: {},
+	    windows: {
+	      pictureAspect: 'noChange',
+	      backgroundColor: '#12526a',
+	      onConflict: 'override'
+	    },
+	    androidChrome: {
+	      pictureAspect: 'noChange',
+	      themeColor: '#12526a',
+	      manifest: {
+		name: 'Actfund',
+		display: 'browser',
+		orientation: 'notSet',
+		onConflict: 'override',
+		declared: true
+	      }
+	    },
+	    safariPinnedTab: {
+	      pictureAspect: 'blackAndWhite',
+	      threshold: 48.59375,
+	      themeColor: '#8ec63f'
+	    }
+	  },
+	  settings: {
+	    compression: 1,
+	    scalingAlgorithm: 'Mitchell',
+	    errorOnImageTooSmall: false
+	  },
+	  versioning: {
+	    paramName: 'v',
+	    paramValue: 'nggQoqQ86o'
+	  }
+	}
+      }
+    }
   });
 
 
@@ -512,6 +560,7 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate',
     'copy:dist',
+    'realFavicon',
     'cdnify',
     'cssmin',
     'uglify',

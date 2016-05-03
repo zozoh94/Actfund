@@ -31,8 +31,14 @@ angular
 	suffix: '.json'
       });
 
-    var lang = localStorage.getItem('lang').substring(1,localStorage.getItem('lang').length-1) || sessionStorage.getItem('lang').substring(1,sessionStorage.getItem('lang').length-1) || false;
-    if(lang===0) {
+    var lang = localStorage.getItem('lang');
+    if(lang === null) {
+      lang = sessionStorage.getItem('lang');
+    }
+    if(lang !== null) {
+      lang = lang.substring(1,lang.length-1);
+    }    
+    else {
       var name = 'lang=';
       var ca = document.cookie.split(';');
       for(var i=0; i<ca.length; i++) {
@@ -46,7 +52,7 @@ angular
 	}
       }
     }
-    if(lang!==0 && lang.match('^(fr|en)$')) {
+    if(lang!==null && lang.match('^(fr|en)$')) {
       $translateProvider.preferredLanguage(lang);
     } else {
       $translateProvider.determinePreferredLanguage();
@@ -103,12 +109,12 @@ angular
     vm.pageTitle = 'Actfund';
     vm.htmlTitle = $filter('translate')('title.actfund');
     vm.pageDesc = $filter('translate')('description').replace(/<[^>]+>/gm, '');
-    vm.pageImages = [];
-
+    vm.pageImages = [];    
+    
     var port = $location.port();
     //Port can be omitted on 80 or 443
     port = (port === 80 || port === 443) ? '' : ':' + port;
-    vm.pageURL = $location.protocol() + '://' + $location.host() + port;
+    vm.pageURL = $location.protocol() + '://' + $location.host() + port + '/en';
 
     //setting fb app id
     $rootScope.facebookAppId = 377735055715546;
